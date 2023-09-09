@@ -4,7 +4,7 @@ const req = require('express/lib/request');
 const res = require('express/lib/response');
 
 
-app.get('/get_info', (req, res) => {
+app.get('/api', (req, res) => {
   try {
     const slackName = req.query.slack_name;
     const track = req.query.track;
