@@ -12,7 +12,7 @@ app.get('/get_info', (req, res) => {
     // Get the current day of the week
     const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const currentDate = new Date();
-    const currentDay = daysOfWeek[currentDate.getUTCDay()];
+    const currentDay = daysOfWeek[currentDate.getDay()];
 
     // Get the current UTC time with validation of +/-2 hours
     const currentUTC = new Date().toISOString();
