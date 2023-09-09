@@ -21,8 +21,8 @@ app.get('/get_info', (req, res) => {
     const utcTime = isWithinValidRange ? currentUTC : 'Invalid UTC offset';
 
     //GitHub URLs
-    const githubFileUrl = 'https://github.com/username/repo/blob/main/file_name.ext';
-    const githubRepoUrl = 'https://github.com/username/repo';
+    const githubFileUrl = 'https://github.com/CollinDex/btsk-1/blob/main/server.js';
+    const githubRepoUrl = 'https://github.com/CollinDex/btsk-1';
 
     const response = {
       slack_name: slackName,
