@@ -15,7 +15,8 @@ app.get('/api', (req, res) => {
     const currentDay = daysOfWeek[currentDate.getDay()];
 
     // Get the current UTC time with validation of +/-2 hours
-    const currentUTC = new Date().toISOString();
+    //const currentUTC = new Date().toISOString(); 
+    const currentUTC = new Date().toISOString().split('.')[0] + 'Z'
     const offsetHours = currentDate.getTimezoneOffset() / 60;
     const isWithinValidRange = offsetHours >= -2 && offsetHours <= 2;
     const utcTime = isWithinValidRange ? currentUTC : 'Invalid UTC offset';
