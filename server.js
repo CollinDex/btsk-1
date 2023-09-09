@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const req = require('express/lib/request');
 const res = require('express/lib/response');
-const port = 3001;
+
 
 app.get('/get_info', (req, res) => {
   try {
@@ -41,6 +41,6 @@ app.get('/get_info', (req, res) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+app.listen(3000, ()=> {
+    console.log('App is running on port 30000');
 });
